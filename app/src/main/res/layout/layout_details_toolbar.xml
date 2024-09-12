@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/Sage"
+    android:gravity="center_vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:id="@+id/back_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/toolbar_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tombol_back"
+            android:background="?attr/selectableItemBackground"
+            android:layout_centerInParent="true"
+            android:paddingLeft="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/check_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/toolbar_check_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tombol_cek"
+            android:background="?attr/selectableItemBackground"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:id="@+id/title_view"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        android:visibility="visible"/>
+
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:id="@+id/title_edit"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+</LinearLayout>

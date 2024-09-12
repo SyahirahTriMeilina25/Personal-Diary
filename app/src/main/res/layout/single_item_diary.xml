@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="4dp"
+    android:background="@color/Sage">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/greennie"/>
+
+    <TextView
+        android:id="@+id/diary_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:textSize="24sp"
+        android:lines="1"
+        android:text="Title 1"
+        android:padding="8dp"
+        android:textColor="@color/white"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="@color/Sage"/>
+
+    <TextView
+        android:id="@+id/diary_timestamp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:textSize="12sp"
+        android:text="24/06/2023"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"/>
+</LinearLayout>
